@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  lookuptime: 2016-12-07 22:43:06
+  domainname: MyString
+  lookuptype: MyString
+
+two:
+  lookuptime: 2016-12-07 22:43:06
+  domainname: MyString
+  lookuptype: MyString

@@ -1,5 +1,6 @@
 # vim: sts=2 
 Rails.application.routes.draw do
+
   resources :dnsrecords, defaults: { format: 'json' }
 
   get 'welcome/index'

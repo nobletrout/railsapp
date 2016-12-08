@@ -4,6 +4,11 @@ class DnsrecordsController < ApplicationController
   end
   
   def index
+    foobar = { mike: "adsf", phil: "dfdf" }
+    respond_to do |format|
+      format.json { render json: foobar }
+      format.xml { render xml: foobar }
+    end
   end
 
   def show

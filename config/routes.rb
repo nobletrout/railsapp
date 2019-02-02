@@ -1,8 +1,8 @@
 # vim: sts=2 
 Rails.application.routes.draw do
 
-  resources :dnsrecords, defaults: { format: 'json' }
-
+  resources :dnsrecords, only: [:index, :create, :destroy, :update], defaults: { format: 'json' }
+  resources :statistics
   get 'welcome/index'
   root 'welcome#index'
   

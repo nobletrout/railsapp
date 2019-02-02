@@ -1,0 +1,6 @@
+<h2>top 15 domains accessed</h2>
+<%= bar_chart @domains.group(:domainname).count.sort_by{ |k| k[1]}.reverse.first(15) %>
+<% unless @overtime_search.nil?  %>
+<h2>Showing results for <%= params[:domain] %></h2>
+<%=  area_chart @overtime_search.group_by_day(:created_at).count %>
+<% end %>
